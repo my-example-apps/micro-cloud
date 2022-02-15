@@ -1,0 +1,11 @@
+server:
+  port: 8000
+
+eureka:
+  dashboard:
+    path: /console
+  server:
+    registry-sync-retries: 1
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
