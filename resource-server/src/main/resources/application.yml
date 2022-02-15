@@ -2,17 +2,17 @@ server:
   port: 8050
 
 spring:
-   cloud:
+  cloud:
       config:
         enabled: false
+  application:
+    name: service1
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
     service-url:
-      default-zone: 127.0.0.1
-    eureka-server-port: 8000
-    enabled: true
+      defaultZone: http://localhost:8000/eureka
+    registry-fetch-interval-seconds: 5000
   instance:
     hostname: localhost
     prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 3

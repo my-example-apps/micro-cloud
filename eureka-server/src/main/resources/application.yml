@@ -5,7 +5,11 @@ eureka:
   dashboard:
     path: /console
   server:
-    registry-sync-retries: 1
+    registry-sync-retries: 10
+    wait-time-in-ms-when-sync-empty: 0
+    eviction-interval-timer-in-ms: 3000
+    renewal-threshold-update-interval-ms: 10000
+    renewal-percent-threshold: 0.85
   client:
     registerWithEureka: false
     fetchRegistry: false
