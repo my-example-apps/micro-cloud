@@ -1,10 +1,28 @@
 server:
   port: 8050
 
+logging:
+  level:
+    com.zaxxer.hikari: TRACE
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
 spring:
-   cloud:
-      config:
-        enabled: false
+  cloud:
+    config:
+      enabled: false
+  datasource:
+    type: org.springframework.jdbc.datasource.DriverManagerDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@//192.168.25.64:1521/hmsdev
+    username: cisapp
+    password: cisapp
+    hikari:
+      allow-pool-suspension: true
+      register-mbeans: true
+      maximum-pool-size: 100
+      minimum-idle: 10
+
+
 eureka:
   client:
     register-with-eureka: false
