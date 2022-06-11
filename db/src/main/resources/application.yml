@@ -1,0 +1,28 @@
+server:
+  port: 9000
+logging:
+  level:
+    root: info
+    org.h2: info
+    org.springframework: info
+
+spring:
+  cloud:
+    config:
+      enabled: false
+  sql:
+    init:
+      schema-locations: classpath:/db/schema/*.sql
+      data-locations: classpath:/db/data/*.sql
+      encoding: utf-8
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb;Mode=Oracle;DB_CLOSE_DELAY=-1;
+    username: sa
+    password: sa
+  jpa:
+    open-in-view: false
+  h2:
+    console:
+      enabled: true
+      path: /h2
