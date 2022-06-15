@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(schema = "sec")
+@Table(schema = "SEC")
 public class User {
 
     private Long id;
