@@ -9,8 +9,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>discovery-service</artifactId>
-	<name>discovery</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Discovery</name>
 
 	<dependencies>
 		<dependency>

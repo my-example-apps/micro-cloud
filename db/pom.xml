@@ -9,7 +9,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>db</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <name>DB</name>
 
     <dependencies>
         <!--<dependency>

@@ -9,8 +9,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>gateway-server</artifactId>
-    <name>gateway</name>
-    <description>Demo project for Spring Boot</description>
+    <name>Gateway</name>
 
     <dependencies>
         <dependency>

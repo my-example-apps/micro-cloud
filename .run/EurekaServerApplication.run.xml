@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
-    <module name="eureka-server" />
+    <module name="eureka-service" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.microcloud.EurekaServerApplication" />
     <option name="ENABLE_JMX_AGENT" value="false" />
     <option name="ALTERNATIVE_JRE_PATH" />

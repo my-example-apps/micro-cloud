@@ -11,7 +11,7 @@
 	<groupId>com.example.microcloud</groupId>
 	<artifactId>micro-cloud-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>micro-cloud-parent</name>
+	<name>Parent</name>
 	<packaging>pom</packaging>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -23,11 +23,12 @@
 	</properties>
 
 	<modules>
-		<module>eureka-server</module>
-		<module>gateway-server</module>
+		<module>authentication-service</module>
+		<module>eureka-service</module>
+		<module>gateway-service</module>
 		<module>resource-server</module>
-		<module>db</module>
 		<module>security-management</module>
+		<module>db</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
