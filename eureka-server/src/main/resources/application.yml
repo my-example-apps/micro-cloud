@@ -1,10 +1,11 @@
 server:
-  port: 8000
+  port: 9000
 
 eureka:
   dashboard:
-    path: /console
+    path: /dashboard
   server:
+
     registry-sync-retries: 1
   client:
     registerWithEureka: false

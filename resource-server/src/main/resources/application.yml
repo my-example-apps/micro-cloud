@@ -7,12 +7,14 @@ logging:
     org.hibernate.SQL: debug
     org.hibernate.type: trace
 spring:
+  application:
+    name: resource-service
   cloud:
     config:
       enabled: false
   datasource:
     type: org.springframework.jdbc.datasource.DriverManagerDataSource
-    url: jdbc:h2:tcp://localhost:9002/mem:testdb;SCHEMA=test
+    url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
     username: sa
     password: sa
@@ -22,15 +24,13 @@ spring:
       maximum-pool-size: 100
       minimum-idle: 10
 
-
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      default-zone: 127.0.0.1
-    eureka-server-port: 8000
     enabled: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+    eureka-server-port: 8000
   instance:
     hostname: localhost
     prefer-ip-address: true

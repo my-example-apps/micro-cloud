@@ -1,0 +1,10 @@
+http://localhost:9003/user
+Content-Type: application/json
+Authorization: 'basic aGFkaToxMjM='
+
+{
+  "username": "h.tayebi",
+  "nickname": "hadi tayebi",
+  "password": "123",
+  "confirmPassword": "123"
+}
