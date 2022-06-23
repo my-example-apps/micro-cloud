@@ -8,7 +8,7 @@
         <groupId>com.example.microcloud</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>security-managemet</artifactId>
+    <artifactId>security-management</artifactId>
     <name>Security</name>
 
     <dependencies>

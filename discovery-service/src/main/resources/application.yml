@@ -5,8 +5,11 @@ eureka:
   dashboard:
     path: /dashboard
   server:
-
     registry-sync-retries: 1
+    enable-self-preservation: true
   client:
     registerWithEureka: false
     fetchRegistry: false
+spring:
+  application:
+    name: discovery-service

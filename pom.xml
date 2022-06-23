@@ -24,7 +24,7 @@
 
 	<modules>
 		<module>authentication-service</module>
-		<module>eureka-service</module>
+		<module>discovery-service</module>
 		<module>gateway-service</module>
 		<module>resource-server</module>
 		<module>security-management</module>
