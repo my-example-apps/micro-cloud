@@ -8,8 +8,8 @@
 		<version>2.6.8</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.microcloud</groupId>
-	<artifactId>micro-cloud-parent</artifactId>
+	<groupId>com.examples.microcloud</groupId>
+	<artifactId>microcloud-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Parent</name>
 	<packaging>pom</packaging>
@@ -23,12 +23,12 @@
 	</properties>
 
 	<modules>
+		<module>db</module>
 		<module>authentication-service</module>
 		<module>discovery-service</module>
 		<module>gateway-service</module>
 		<module>resource-server</module>
 		<module>security-management</module>
-		<module>db</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
